@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*Título*/
+.main-title {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: #e7f5ec;
+  
+ 
+}
+
+.main-title h1 {
+  font-size: 36px;
+  color: #2b9348;
+  margin-bottom: 10px;
+}
+
+.main-title p {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.texto h2 {
+  font-size: 18px;
+  color: #e01111;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.header-icons i:hover {
+  color: #2b9348;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #444;
+}
+
+/* Conteúdo principal */
+.health-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-saude {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.imagem img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagem {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.texto {
+  flex: 2 1 500px;
+}
+
+.texto h2 {
+    font-size: 25px;
+    color: #fff;
+    background-color: rgb(202, 151, 57);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0);
+}
+
+.texto p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.health-details {
+  flex: 2 1 500px;
+}
+
+.health-title {
+  color: #2b9348;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.tip {
+  margin-bottom: 20px;
+}
+
+.tip h3 {
+  font-size: 20px;
+  color: #1a5d1a;
+}
+
+.tip p {
+  margin-top: 5px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .health-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
