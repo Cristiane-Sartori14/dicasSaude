@@ -6,8 +6,8 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #FFFCF6;
+  color: #296B64;
   line-height: 1.6;
 }
 
@@ -16,28 +16,31 @@ body {
   text-align: center;
   padding: 40px 20px 20px;
   background-color: #e7f5ec;
-  
- 
 }
 
 .main-title h1 {
   font-size: 36px;
-  color: #2b9348;
+  color: #296B64;
   margin-bottom: 10px;
 }
 
 .main-title p {
-  color: #555;
+  color: #69AC93;
 }
 
 .texto h2 {
-  font-size: 18px;
-  color: #e01111;
+  font-size: 25px;
+  color: #FFF;
+  background-color: #F6AB60; /* laranja */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
 }
 
 /* Cabeçalho */
 .header {
-  background-color: #ffffff;
+  background-color: #FFF9F0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 15px 30px;
   position: sticky;
@@ -61,14 +64,14 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #222;
+  color: #296B64;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover,
 .header-icons i:hover {
-  color: #2b9348;
+  color: #D87162;
 }
 
 .header-icons {
@@ -82,10 +85,31 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  color: #444;
+  color: #296B64;
 }
 
 /* Conteúdo principal */
+
+.filtro-categorias {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filtro-categorias button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #69AC93; /* verde médio */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filtro-categorias button:hover {
+  background-color: #296B64; /* verde escuro */
+}
+
 .health-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -118,16 +142,20 @@ body {
 }
 
 .texto h2 {
-    font-size: 25px;
-    color: #fff;
-    background-color: rgb(202, 151, 57);
-    text-shadow: 1px 1px 5px rgba(0, 0, 0);
+  font-size: 25px;
+  color: #FFF;
+  background-color: #F6AB60;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
 }
 
 .texto p {
   font-size: 18px;
-  color: #333;
+  color: #296B64;
   line-height: 1.6;
+   margin-top: 10px;
 }
 
 .health-details {
@@ -135,7 +163,7 @@ body {
 }
 
 .health-title {
-  color: #2b9348;
+  color: #296B64;
   font-size: 32px;
   margin-bottom: 20px;
 }
@@ -146,7 +174,7 @@ body {
 
 .tip h3 {
   font-size: 20px;
-  color: #1a5d1a;
+  color: #69AC93;
 }
 
 .tip p {
@@ -155,9 +183,10 @@ body {
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .health-container {
+  .section-saude {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .nav-links {
