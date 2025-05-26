@@ -1,0 +1,17 @@
+let indiceAtual = 0;
+const secoes = document.querySelectorAll('#carousel-dicas .section-saude');
+
+function mostrarSecao(index) {
+  secoes.forEach((secao, i) => {
+    secao.style.display = (i === index) ? 'flex' : 'none';
+  });
+}
+
+function proximaSecao() {
+  indiceAtual = (indiceAtual + 1) % secoes.length;
+  mostrarSecao(indiceAtual);
+}
+
+// Inicializa
+mostrarSecao(indiceAtual);
+setInterval(proximaSecao, 5000);
